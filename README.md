@@ -1,69 +1,59 @@
-# Welcome to your Lovable project
 
-## Project info
+# Open Toolbox Explorer
 
-**URL**: https://lovable.dev/projects/6fe5f727-75cd-40c9-bd5d-3db9c02baf8d
+Une application React pour explorer, filtrer et gérer une collection d'outils open source.
 
-## How can I edit this code?
+## Fonctionnalités
 
-There are several ways of editing your application.
+- **Navigation intuitive** : Barre latérale pour filtrer par catégories
+- **Recherche avancée** : Filtrage en temps réel par nom ou mots-clés
+- **Interface responsive** : S'adapte aux mobiles, tablettes et ordinateurs
+- **Design élégant** : Interface minimaliste avec une attention aux détails
 
-**Use Lovable**
+## Technologies utilisées
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6fe5f727-75cd-40c9-bd5d-3db9c02baf8d) and start prompting.
+- React avec TypeScript
+- Tailwind CSS pour le styling
+- Framer Motion pour les animations
+- shadcn/ui pour certains composants d'interface
 
-Changes made via Lovable will be committed automatically to this repo.
+## Structure des données
 
-**Use your preferred IDE**
+Les outils sont stockés dans un fichier JSON (`/public/open_source_tools.json`) avec la structure suivante :
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```json
+{
+  "categories": [
+    {
+      "id": number,
+      "name": string,
+      "description": string,
+      "keywords": string[],
+      "tools": [
+        {
+          "name": string,
+          "description": string,
+          "source": string (URL),
+          "keywords": string[]
+        }
+      ]
+    }
+  ]
+}
 ```
 
-**Edit a file directly in GitHub**
+## Comment démarrer
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Clonez ce dépôt
+2. Installez les dépendances : `npm install`
+3. Lancez le serveur de développement : `npm run dev`
+4. Ouvrez votre navigateur à l'adresse : `http://localhost:8080`
 
-**Use GitHub Codespaces**
+## Modifier les données
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Pour ajouter ou modifier des outils, éditez simplement le fichier JSON dans `/public/open_source_tools.json`. L'application dispose d'un bouton de rafraîchissement pour recharger les données sans avoir à redémarrer l'application.
 
-## What technologies are used for this project?
+## Personnalisation
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6fe5f727-75cd-40c9-bd5d-3db9c02baf8d) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- **Couleurs** : La couleur principale de l'application (#006a4f) peut être modifiée dans le fichier `tailwind.config.ts`
+- **Polices** : L'application utilise la police Inter, qui peut être changée dans le même fichier

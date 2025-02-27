@@ -1,0 +1,165 @@
+
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Collecte et Acquisition",
+      "description": "Outils pour collecter et acquérir des données",
+      "keywords": ["collecte", "acquisition", "données", "scraping"],
+      "tools": [
+        {
+          "name": "BeautifulSoup",
+          "description": "Bibliothèque Python pour l'extraction de données HTML et XML",
+          "source": "https://www.crummy.com/software/BeautifulSoup/",
+          "keywords": ["python", "web scraping", "html", "parsing"]
+        },
+        {
+          "name": "Scrapy",
+          "description": "Framework Python pour le scraping web à grande échelle",
+          "source": "https://scrapy.org/",
+          "keywords": ["python", "web scraping", "crawler", "framework"]
+        },
+        {
+          "name": "Octoparse",
+          "description": "Outil visuel pour extraire des données web sans code",
+          "source": "https://www.octoparse.com/",
+          "keywords": ["no code", "web scraping", "visuel", "automation"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Traitement et Analyse",
+      "description": "Outils pour traiter et analyser des données",
+      "keywords": ["traitement", "analyse", "data", "processing"],
+      "tools": [
+        {
+          "name": "pandas",
+          "description": "Bibliothèque Python pour la manipulation et l'analyse de données",
+          "source": "https://pandas.pydata.org/",
+          "keywords": ["python", "dataframe", "analyse", "statistiques"]
+        },
+        {
+          "name": "NumPy",
+          "description": "Bibliothèque pour le calcul scientifique avec Python",
+          "source": "https://numpy.org/",
+          "keywords": ["python", "calcul", "matrices", "scientifique"]
+        },
+        {
+          "name": "R",
+          "description": "Langage de programmation pour l'analyse statistique",
+          "source": "https://www.r-project.org/",
+          "keywords": ["statistiques", "langage", "data science", "visualisation"]
+        },
+        {
+          "name": "Apache Spark",
+          "description": "Moteur de traitement de données distribué pour le big data",
+          "source": "https://spark.apache.org/",
+          "keywords": ["big data", "distribué", "traitement", "scala"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Visualisation",
+      "description": "Outils pour visualiser des données",
+      "keywords": ["visualisation", "graphiques", "charts", "dashboards"],
+      "tools": [
+        {
+          "name": "Matplotlib",
+          "description": "Bibliothèque de visualisation pour Python",
+          "source": "https://matplotlib.org/",
+          "keywords": ["python", "graphiques", "plots", "visualisation"]
+        },
+        {
+          "name": "D3.js",
+          "description": "Bibliothèque JavaScript pour créer des visualisations de données interactives",
+          "source": "https://d3js.org/",
+          "keywords": ["javascript", "interactif", "visualisation", "svg"]
+        },
+        {
+          "name": "Tableau Public",
+          "description": "Logiciel pour créer et partager des visualisations interactives",
+          "source": "https://public.tableau.com/",
+          "keywords": ["dashboards", "interactif", "gratuit", "partage"]
+        },
+        {
+          "name": "Plotly",
+          "description": "Bibliothèque pour créer des graphiques interactifs",
+          "source": "https://plotly.com/",
+          "keywords": ["python", "javascript", "interactif", "web"]
+        },
+        {
+          "name": "Power BI",
+          "description": "Outil de Business Intelligence de Microsoft",
+          "source": "https://powerbi.microsoft.com/",
+          "keywords": ["microsoft", "business intelligence", "dashboards", "rapports"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Machine Learning",
+      "description": "Outils et frameworks pour le machine learning",
+      "keywords": ["ML", "AI", "deep learning", "modèles"],
+      "tools": [
+        {
+          "name": "scikit-learn",
+          "description": "Bibliothèque Python pour le machine learning",
+          "source": "https://scikit-learn.org/",
+          "keywords": ["python", "ML", "algorithmes", "classification"]
+        },
+        {
+          "name": "TensorFlow",
+          "description": "Plateforme open-source de bout en bout pour le machine learning",
+          "source": "https://www.tensorflow.org/",
+          "keywords": ["deep learning", "google", "réseaux de neurones", "python"]
+        },
+        {
+          "name": "PyTorch",
+          "description": "Framework de deep learning pour Python",
+          "source": "https://pytorch.org/",
+          "keywords": ["deep learning", "facebook", "réseaux de neurones", "python"]
+        },
+        {
+          "name": "Hugging Face",
+          "description": "Bibliothèque pour utiliser des modèles de NLP pré-entraînés",
+          "source": "https://huggingface.co/",
+          "keywords": ["NLP", "transformers", "pré-entraînés", "modèles"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Gestion de Données",
+      "description": "Outils pour gérer et stocker des données",
+      "keywords": ["bases de données", "stockage", "ETL", "data management"],
+      "tools": [
+        {
+          "name": "PostgreSQL",
+          "description": "Système de gestion de base de données relationnelle",
+          "source": "https://www.postgresql.org/",
+          "keywords": ["SQL", "relationnel", "base de données", "open-source"]
+        },
+        {
+          "name": "MongoDB",
+          "description": "Base de données orientée documents",
+          "source": "https://www.mongodb.com/",
+          "keywords": ["NoSQL", "documents", "JSON", "schéma flexible"]
+        },
+        {
+          "name": "Hadoop",
+          "description": "Framework pour le traitement distribué de grands ensembles de données",
+          "source": "https://hadoop.apache.org/",
+          "keywords": ["big data", "distribué", "java", "mapreduce"]
+        },
+        {
+          "name": "Apache Airflow",
+          "description": "Plateforme pour orchestrer des workflows de données",
+          "source": "https://airflow.apache.org/",
+          "keywords": ["ETL", "orchestration", "workflows", "python"]
+        }
+      ]
+    }
+  ]
+}
