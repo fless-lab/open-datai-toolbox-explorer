@@ -1,163 +1,2042 @@
-
 {
   "categories": [
     {
       "id": 1,
-      "name": "Collecte et Acquisition",
-      "description": "Outils pour collecter et acquérir des données",
-      "keywords": ["collecte", "acquisition", "données", "scraping"],
+      "name": "Collecte et Acquisition des Données",
+      "description": "Outils pour extraire, récupérer ou collecter des données depuis diverses sources comme le web, des API, des capteurs ou des fichiers locaux.",
+      "keywords": ["scraping", "crawling", "API", "data collection", "web", "extraction"],
       "tools": [
         {
-          "name": "BeautifulSoup",
-          "description": "Bibliothèque Python pour l'extraction de données HTML et XML",
-          "source": "https://www.crummy.com/software/BeautifulSoup/",
-          "keywords": ["python", "web scraping", "html", "parsing"]
+          "name": "Beautiful Soup (Python)",
+          "description": "Bibliothèque Python légère pour extraire des données de pages HTML et XML. Idéal pour scraper des sites web simples ou semi-structurés.",
+          "source": "https://github.com/pallets/beautifulsoup",
+          "keywords": ["python", "scraping", "html", "xml", "web"]
         },
         {
           "name": "Scrapy",
-          "description": "Framework Python pour le scraping web à grande échelle",
-          "source": "https://scrapy.org/",
-          "keywords": ["python", "web scraping", "crawler", "framework"]
+          "description": "Framework Python puissant pour le web scraping à grande échelle. Permet de crawler des sites complexes et d'extraire des données structurées efficacement.",
+          "source": "https://github.com/scrapy/scrapy",
+          "keywords": ["python", "scraping", "crawling", "web", "data extraction"]
         },
         {
-          "name": "Octoparse",
-          "description": "Outil visuel pour extraire des données web sans code",
+          "name": "Apache Nutch",
+          "description": "Outil de crawling web extensible, souvent couplé à des moteurs de recherche comme Solr. Parfait pour collecter des données sur de vastes portions du web.",
+          "source": "https://github.com/apache/nutch",
+          "keywords": ["crawling", "web", "big data", "search", "apache"]
+        },
+        {
+          "name": "Wget",
+          "description": "Utilitaire en ligne de commande pour télécharger des fichiers ou des sites entiers via HTTP/HTTPS/FTP. Simple et robuste pour des tâches basiques.",
+          "source": "https://www.gnu.org/software/wget/",
+          "keywords": ["download", "cli", "http", "ftp", "simple"]
+        },
+        {
+          "name": "cURL",
+          "description": "Outil en ligne de commande pour interagir avec des API ou récupérer des données depuis des URL. Très utilisé pour tester ou collecter via des endpoints.",
+          "source": "https://github.com/curl/curl",
+          "keywords": ["api", "http", "cli", "data retrieval", "testing"]
+        },
+        {
+          "name": "Heritrix",
+          "description": "Archiveur web open source utilisé par les bibliothèques et institutions pour collecter et préserver des sites web à grande échelle.",
+          "source": "https://github.com/internetarchive/heritrix3",
+          "keywords": ["web archiving", "crawling", "preservation", "large scale"]
+        },
+        {
+          "name": "Apache Flume",
+          "description": "Système pour collecter, agréger et déplacer de grands volumes de données (ex. : logs, flux) vers des systèmes comme Hadoop.",
+          "source": "https://github.com/apache/flume",
+          "keywords": ["logs", "big data", "streaming", "hadoop", "apache"]
+        },
+        {
+          "name": "Requests (Python)",
+          "description": "Bibliothèque Python pour faire des requêtes HTTP simples et collecter des données via des API ou des sites web. Facile à utiliser pour débutants.",
+          "source": "https://github.com/psf/requests",
+          "keywords": ["python", "api", "http", "simple", "beginner"]
+        },
+        {
+          "name": "WebHarvy (version open source limitée)",
+          "description": "Outil graphique pour scraper des sites sans coder, avec export vers CSV ou bases de données. Utile pour des utilisateurs non techniques. (Note : pas entièrement open source, version communautaire limitée).",
+          "source": "https://www.webharvy.com/",
+          "keywords": ["scraping", "gui", "no-code", "csv", "non-technical"]
+        },
+        {
+          "name": "Octoparse (version communautaire)",
+          "description": "Logiciel de scraping avec une interface visuelle, permettant de collecter des données de sites dynamiques. La version gratuite est limitée mais fonctionnelle.",
           "source": "https://www.octoparse.com/",
-          "keywords": ["no code", "web scraping", "visuel", "automation"]
+          "keywords": ["scraping", "gui", "dynamic sites", "no-code", "limited"]
         }
       ]
     },
     {
       "id": 2,
-      "name": "Traitement et Analyse",
-      "description": "Outils pour traiter et analyser des données",
-      "keywords": ["traitement", "analyse", "data", "processing"],
+      "name": "Stockage et Gestion des Données",
+      "description": "Solutions pour stocker, organiser et gérer des données, qu'il s'agisse de bases de données relationnelles, NoSQL ou de systèmes de fichiers.",
+      "keywords": ["database", "storage", "management", "sql", "nosql"],
       "tools": [
         {
-          "name": "pandas",
-          "description": "Bibliothèque Python pour la manipulation et l'analyse de données",
-          "source": "https://pandas.pydata.org/",
-          "keywords": ["python", "dataframe", "analyse", "statistiques"]
+          "name": "PostgreSQL",
+          "description": "Base de données relationnelle robuste et polyvalente, largement utilisée pour sa fiabilité et ses fonctionnalités avancées.",
+          "source": "https://github.com/postgres/postgres",
+          "keywords": ["sql", "relational", "database", "robust", "open source"]
         },
         {
-          "name": "NumPy",
-          "description": "Bibliothèque pour le calcul scientifique avec Python",
-          "source": "https://numpy.org/",
-          "keywords": ["python", "calcul", "matrices", "scientifique"]
+          "name": "MongoDB",
+          "description": "Base de données NoSQL pour des données non structurées ou semi-structurées, idéale pour des applications modernes.",
+          "source": "https://github.com/mongodb/mongo",
+          "keywords": ["nosql", "document", "flexible", "big data"]
         },
         {
-          "name": "R",
-          "description": "Langage de programmation pour l'analyse statistique",
-          "source": "https://www.r-project.org/",
-          "keywords": ["statistiques", "langage", "data science", "visualisation"]
+          "name": "Apache Cassandra",
+          "description": "Système distribué pour gérer de grands volumes de données avec haute disponibilité et tolérance aux pannes.",
+          "source": "https://github.com/apache/cassandra",
+          "keywords": ["nosql", "distributed", "scalability", "big data"]
         },
         {
-          "name": "Apache Spark",
-          "description": "Moteur de traitement de données distribué pour le big data",
-          "source": "https://spark.apache.org/",
-          "keywords": ["big data", "distribué", "traitement", "scala"]
+          "name": "SQLite",
+          "description": "Base de données relationnelle légère, embarquée dans des applications, sans serveur requis.",
+          "source": "https://github.com/sqlite/sqlite",
+          "keywords": ["sql", "lightweight", "embedded", "simple"]
+        },
+        {
+          "name": "MariaDB",
+          "description": "Fork open source de MySQL, offrant des performances améliorées et une compatibilité avec MySQL.",
+          "source": "https://github.com/MariaDB/server",
+          "keywords": ["sql", "mysql", "performance", "relational"]
+        },
+        {
+          "name": "CouchDB",
+          "description": "Base de données NoSQL orientée documents avec synchronisation facile entre appareils.",
+          "source": "https://github.com/apache/couchdb",
+          "keywords": ["nosql", "document", "sync", "apache"]
+        },
+        {
+          "name": "Redis",
+          "description": "Base de données en mémoire pour des performances ultra-rapides, souvent utilisée comme cache.",
+          "source": "https://github.com/redis/redis",
+          "keywords": ["in-memory", "cache", "fast", "key-value"]
+        },
+        {
+          "name": "HBase",
+          "description": "Base de données distribuée pour le Big Data, construite sur HDFS, adaptée aux grandes tables.",
+          "source": "https://github.com/apache/hbase",
+          "keywords": ["big data", "distributed", "hadoop", "apache"]
+        },
+        {
+          "name": "Neo4j",
+          "description": "Base de données orientée graphes pour modéliser des relations complexes.",
+          "source": "https://github.com/neo4j/neo4j",
+          "keywords": ["graph", "relationships", "nosql", "complex"]
+        },
+        {
+          "name": "InfluxDB",
+          "description": "Base de données optimisée pour les séries temporelles, comme les métriques ou les logs.",
+          "source": "https://github.com/influxdata/influxdb",
+          "keywords": ["time-series", "metrics", "logs", "monitoring"]
         }
       ]
     },
     {
       "id": 3,
-      "name": "Visualisation",
-      "description": "Outils pour visualiser des données",
-      "keywords": ["visualisation", "graphiques", "charts", "dashboards"],
+      "name": "Nettoyage et Préparation des Données",
+      "description": "Outils pour corriger les erreurs, supprimer les doublons, gérer les valeurs manquantes et préparer les données pour l'analyse.",
+      "keywords": ["data cleaning", "preprocessing", "transformation", "quality"],
       "tools": [
         {
-          "name": "Matplotlib",
-          "description": "Bibliothèque de visualisation pour Python",
-          "source": "https://matplotlib.org/",
-          "keywords": ["python", "graphiques", "plots", "visualisation"]
+          "name": "OpenRefine",
+          "description": "Outil interactif pour nettoyer et transformer des données désordonnées avec une interface graphique.",
+          "source": "https://github.com/OpenRefine/OpenRefine",
+          "keywords": ["cleaning", "gui", "transformation", "data quality"]
         },
         {
-          "name": "D3.js",
-          "description": "Bibliothèque JavaScript pour créer des visualisations de données interactives",
-          "source": "https://d3js.org/",
-          "keywords": ["javascript", "interactif", "visualisation", "svg"]
+          "name": "Pandas (Python)",
+          "description": "Bibliothèque Python pour manipuler et nettoyer des ensembles de données efficacement.",
+          "source": "https://github.com/pandas-dev/pandas",
+          "keywords": ["python", "data manipulation", "cleaning", "analysis"]
         },
         {
-          "name": "Tableau Public",
-          "description": "Logiciel pour créer et partager des visualisations interactives",
-          "source": "https://public.tableau.com/",
-          "keywords": ["dashboards", "interactif", "gratuit", "partage"]
+          "name": "Trifacta Wrangler (version open source)",
+          "description": "Outil pour explorer et préparer des données, avec des suggestions automatiques pour le nettoyage.",
+          "source": "https://www.trifacta.com/community-edition/",
+          "keywords": ["preparation", "gui", "automation", "data wrangling"]
         },
         {
-          "name": "Plotly",
-          "description": "Bibliothèque pour créer des graphiques interactifs",
-          "source": "https://plotly.com/",
-          "keywords": ["python", "javascript", "interactif", "web"]
+          "name": "DataCleaner",
+          "description": "Outil pour profiler, nettoyer et enrichir des données avec une interface utilisateur.",
+          "source": "https://github.com/datacleaner/DataCleaner",
+          "keywords": ["profiling", "cleaning", "gui", "data quality"]
         },
         {
-          "name": "Power BI",
-          "description": "Outil de Business Intelligence de Microsoft",
-          "source": "https://powerbi.microsoft.com/",
-          "keywords": ["microsoft", "business intelligence", "dashboards", "rapports"]
+          "name": "Apache Spark (avec DataFrames)",
+          "description": "Framework distribué avec des capacités de nettoyage pour les grands datasets.",
+          "source": "https://github.com/apache/spark",
+          "keywords": ["big data", "distributed", "cleaning", "spark"]
+        },
+        {
+          "name": "Tidyverse (R)",
+          "description": "Ensemble de packages R pour nettoyer et préparer des données de manière intuitive.",
+          "source": "https://github.com/tidyverse/tidyverse",
+          "keywords": ["r", "cleaning", "preprocessing", "data wrangling"]
+        },
+        {
+          "name": "Dedupe (Python)",
+          "description": "Bibliothèque Python pour détecter et supprimer les doublons dans des datasets.",
+          "source": "https://github.com/dedupeio/dedupe",
+          "keywords": ["python", "deduplication", "data quality"]
+        },
+        {
+          "name": "MissForest (R)",
+          "description": "Package R pour imputer les valeurs manquantes avec des forêts aléatoires.",
+          "source": "https://github.com/cran/MissForest",
+          "keywords": ["r", "missing data", "imputation", "machine learning"]
+        },
+        {
+          "name": "Cleanlab",
+          "description": "Outil pour détecter automatiquement les erreurs dans les datasets pour améliorer leur qualité.",
+          "source": "https://github.com/cleanlab/cleanlab",
+          "keywords": ["data quality", "error detection", "automation"]
+        },
+        {
+          "name": "Soda SQL",
+          "description": "Outil pour définir des tests de qualité des données et nettoyer les bases de données.",
+          "source": "https://github.com/sodadata/soda-sql",
+          "keywords": ["data quality", "testing", "sql", "cleaning"]
         }
       ]
     },
     {
       "id": 4,
-      "name": "Machine Learning",
-      "description": "Outils et frameworks pour le machine learning",
-      "keywords": ["ML", "AI", "deep learning", "modèles"],
+      "name": "Traitement et Analyse des Données",
+      "description": "Frameworks et bibliothèques pour traiter les données, effectuer des calculs statistiques ou manipuler des ensembles volumineux.",
+      "keywords": ["data processing", "analysis", "statistics", "big data"],
       "tools": [
         {
-          "name": "scikit-learn",
-          "description": "Bibliothèque Python pour le machine learning",
-          "source": "https://scikit-learn.org/",
-          "keywords": ["python", "ML", "algorithmes", "classification"]
+          "name": "Apache Spark",
+          "description": "Moteur de traitement distribué pour analyser de grands volumes de données rapidement.",
+          "source": "https://github.com/apache/spark",
+          "keywords": ["big data", "distributed", "processing", "spark"]
         },
         {
-          "name": "TensorFlow",
-          "description": "Plateforme open-source de bout en bout pour le machine learning",
-          "source": "https://www.tensorflow.org/",
-          "keywords": ["deep learning", "google", "réseaux de neurones", "python"]
+          "name": "NumPy (Python)",
+          "description": "Bibliothèque pour des calculs numériques rapides sur des tableaux et matrices.",
+          "source": "https://github.com/numpy/numpy",
+          "keywords": ["python", "numerical", "arrays", "math"]
         },
         {
-          "name": "PyTorch",
-          "description": "Framework de deep learning pour Python",
-          "source": "https://pytorch.org/",
-          "keywords": ["deep learning", "facebook", "réseaux de neurones", "python"]
+          "name": "R",
+          "description": "Langage statistique avec des packages pour l'analyse et le traitement des données.",
+          "source": "https://www.r-project.org/",
+          "keywords": ["statistics", "analysis", "r", "data science"]
         },
         {
-          "name": "Hugging Face",
-          "description": "Bibliothèque pour utiliser des modèles de NLP pré-entraînés",
-          "source": "https://huggingface.co/",
-          "keywords": ["NLP", "transformers", "pré-entraînés", "modèles"]
+          "name": "Pandas (Python)",
+          "description": "Bibliothèque Python pour manipuler et analyser des données tabulaires.",
+          "source": "https://github.com/pandas-dev/pandas",
+          "keywords": ["python", "data analysis", "tables", "manipulation"]
+        },
+        {
+          "name": "Dask",
+          "description": "Bibliothèque Python pour le traitement parallèle de grands datasets.",
+          "source": "https://github.com/dask/dask",
+          "keywords": ["python", "parallel", "big data", "processing"]
+        },
+        {
+          "name": "Apache Beam",
+          "description": "Framework pour traiter des données en batch ou en streaming de manière unifiée.",
+          "source": "https://github.com/apache/beam",
+          "keywords": ["batch", "streaming", "processing", "apache"]
+        },
+        {
+          "name": "SciPy (Python)",
+          "description": "Bibliothèque pour des calculs scientifiques et statistiques avancés.",
+          "source": "https://github.com/scipy/scipy",
+          "keywords": ["python", "scientific", "statistics", "math"]
+        },
+        {
+          "name": "Polars",
+          "description": "Bibliothèque rapide pour le traitement de données tabulaires en Rust et Python.",
+          "source": "https://github.com/pola-rs/polars",
+          "keywords": ["fast", "data processing", "rust", "python"]
+        },
+        {
+          "name": "Apache Flink",
+          "description": "Moteur de traitement pour le Big Data en streaming ou batch avec faible latence.",
+          "source": "https://github.com/apache/flink",
+          "keywords": ["big data", "streaming", "batch", "apache"]
+        },
+        {
+          "name": "Julia",
+          "description": "Langage rapide pour le calcul numérique et l'analyse de données.",
+          "source": "https://github.com/JuliaLang/julia",
+          "keywords": ["numerical", "fast", "analysis", "julia"]
         }
       ]
     },
     {
       "id": 5,
-      "name": "Gestion de Données",
-      "description": "Outils pour gérer et stocker des données",
-      "keywords": ["bases de données", "stockage", "ETL", "data management"],
+      "name": "Science des Données et Machine Learning",
+      "description": "Outils pour concevoir, entraîner et déployer des modèles d'apprentissage automatique ou d'intelligence artificielle.",
+      "keywords": ["machine learning", "data science", "AI", "models"],
       "tools": [
         {
-          "name": "PostgreSQL",
-          "description": "Système de gestion de base de données relationnelle",
-          "source": "https://www.postgresql.org/",
-          "keywords": ["SQL", "relationnel", "base de données", "open-source"]
+          "name": "TensorFlow",
+          "description": "Framework puissant pour construire et entraîner des modèles d'apprentissage profond (deep learning).",
+          "source": "https://github.com/tensorflow/tensorflow",
+          "keywords": ["deep learning", "AI", "tensorflow", "models"]
         },
         {
-          "name": "MongoDB",
-          "description": "Base de données orientée documents",
-          "source": "https://www.mongodb.com/",
-          "keywords": ["NoSQL", "documents", "JSON", "schéma flexible"]
+          "name": "scikit-learn (Python)",
+          "description": "Bibliothèque Python pour le machine learning classique (régressions, classifications, clustering).",
+          "source": "https://github.com/scikit-learn/scikit-learn",
+          "keywords": ["python", "machine learning", "simple", "classification"]
         },
         {
-          "name": "Hadoop",
-          "description": "Framework pour le traitement distribué de grands ensembles de données",
-          "source": "https://hadoop.apache.org/",
-          "keywords": ["big data", "distribué", "java", "mapreduce"]
+          "name": "PyTorch",
+          "description": "Framework flexible pour le deep learning, populaire dans la recherche et les applications avancées.",
+          "source": "https://github.com/pytorch/pytorch",
+          "keywords": ["deep learning", "research", "flexible", "pytorch"]
         },
+        {
+          "name": "Apache Mahout",
+          "description": "Outil pour le machine learning sur des données massives, intégré avec Hadoop.",
+          "source": "https://github.com/apache/mahout",
+          "keywords": ["big data", "machine learning", "hadoop", "apache"]
+        },
+        {
+          "name": "Keras",
+          "description": "API de haut niveau pour simplifier la création de réseaux neuronaux, souvent utilisée avec TensorFlow.",
+          "source": "https://github.com/keras-team/keras",
+          "keywords": ["deep learning", "simple", "neural networks", "tensorflow"]
+        },
+        {
+          "name": "XGBoost",
+          "description": "Bibliothèque optimisée pour les algorithmes de gradient boosting, très performante.",
+          "source": "https://github.com/dmlc/xgboost",
+          "keywords": ["gradient boosting", "performance", "machine learning"]
+        },
+        {
+          "name": "LightGBM",
+          "description": "Variante de gradient boosting rapide et efficace pour de grands datasets.",
+          "source": "https://github.com/microsoft/LightGBM",
+          "keywords": ["gradient boosting", "fast", "big data"]
+        },
+        {
+          "name": "H2O.ai",
+          "description": "Plateforme pour automatiser le machine learning (AutoML) avec des modèles performants.",
+          "source": "https://github.com/h2oai/h2o-3",
+          "keywords": ["automl", "machine learning", "performance"]
+        },
+        {
+          "name": "MLflow",
+          "description": "Outil pour gérer le cycle de vie des projets de machine learning (suivi, déploiement).",
+          "source": "https://github.com/mlflow/mlflow",
+          "keywords": ["management", "machine learning", "deployment"]
+        },
+        {
+          "name": "Orange",
+          "description": "Logiciel avec interface graphique pour explorer et tester des algorithmes de machine learning.",
+          "source": "https://github.com/biolab/orange3",
+          "keywords": ["gui", "machine learning", "exploration", "no-code"]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Visualisation des Données",
+      "description": "Solutions pour créer des graphiques, des tableaux de bord ou des visualisations interactives pour mieux comprendre les données.",
+      "keywords": ["visualization", "dashboards", "graphs", "interactive"],
+      "tools": [
+        {
+          "name": "Matplotlib (Python)",
+          "description": "Bibliothèque Python pour créer des graphiques statiques personnalisables (histogrammes, courbes, etc.).",
+          "source": "https://github.com/matplotlib/matplotlib",
+          "keywords": ["python", "static", "graphs", "customizable"]
+        },
+        {
+          "name": "Seaborn (Python)",
+          "description": "Extension de Matplotlib avec des styles modernes et des visualisations statistiques.",
+          "source": "https://github.com/mwaskom/seaborn",
+          "keywords": ["python", "statistics", "modern", "matplotlib"]
+        },
+        {
+          "name": "Plotly (Python)",
+          "description": "Bibliothèque pour des graphiques interactifs publiables en ligne (diagrammes, cartes).",
+          "source": "https://github.com/plotly/plotly.py",
+          "keywords": ["python", "interactive", "web", "charts"]
+        },
+        {
+          "name": "Grafana",
+          "description": "Plateforme pour visualiser des données en temps réel ou historiques via des dashboards.",
+          "source": "https://github.com/grafana/grafana",
+          "keywords": ["dashboards", "real-time", "monitoring"]
+        },
+        {
+          "name": "Apache Superset",
+          "description": "Outil de BI pour concevoir des dashboards interactifs et explorer des données.",
+          "source": "https://github.com/apache/superset",
+          "keywords": ["bi", "dashboards", "interactive", "apache"]
+        },
+        {
+          "name": "D3.js",
+          "description": "Bibliothèque JavaScript pour des visualisations dynamiques et personnalisées dans le navigateur.",
+          "source": "https://github.com/d3/d3",
+          "keywords": ["javascript", "dynamic", "web", "custom"]
+        },
+        {
+          "name": "Bokeh (Python)",
+          "description": "Outil pour créer des visualisations interactives et esthétiques pour le web.",
+          "source": "https://github.com/bokeh/bokeh",
+          "keywords": ["python", "interactive", "web", "aesthetic"]
+        },
+        {
+          "name": "Metabase",
+          "description": "Plateforme simple pour générer des graphiques et dashboards, accessible aux non-techniciens.",
+          "source": "https://github.com/metabase/metabase",
+          "keywords": ["simple", "dashboards", "no-code", "bi"]
+        },
+        {
+          "name": "RAWGraphs",
+          "description": "Outil web pour transformer des données en visualisations personnalisées sans coder.",
+          "source": "https://github.com/rawgraphs/rawgraphs-core",
+          "keywords": ["web", "no-code", "custom", "visualization"]
+        },
+        {
+          "name": "Redash",
+          "description": "Solution pour interroger des données et créer des visualisations partageables.",
+          "source": "https://github.com/getredash/redash",
+          "keywords": ["query", "dashboards", "collaborative", "bi"]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Automatisation et Orchestration",
+      "description": "Outils pour automatiser les tâches répétitives, planifier des workflows ou orchestrer des pipelines de données.",
+      "keywords": ["automation", "orchestration", "workflows", "pipelines"],
+      "tools": [
         {
           "name": "Apache Airflow",
-          "description": "Plateforme pour orchestrer des workflows de données",
-          "source": "https://airflow.apache.org/",
-          "keywords": ["ETL", "orchestration", "workflows", "python"]
+          "description": "Plateforme pour programmer, orchestrer et surveiller des workflows complexes via des DAGs.",
+          "source": "https://github.com/apache/airflow",
+          "keywords": ["workflows", "orchestration", "dags", "apache"]
+        },
+        {
+          "name": "Luigi",
+          "description": "Outil Python léger pour automatiser des pipelines de données avec dépendances.",
+          "source": "https://github.com/spotify/luigi",
+          "keywords": ["python", "pipelines", "automation", "simple"]
+        },
+        {
+          "name": "Cron",
+          "description": "Utilitaire classique sous Unix pour planifier des tâches récurrentes (scripts, mises à jour).",
+          "source": "https://github.com/cronie-crond/cronie",
+          "keywords": ["scheduling", "cli", "unix", "simple"]
+        },
+        {
+          "name": "Prefect",
+          "description": "Alternative moderne à Airflow, centrée sur la simplicité et la flexibilité en Python.",
+          "source": "https://github.com/PrefectHQ/prefect",
+          "keywords": ["python", "workflows", "modern", "orchestration"]
+        },
+        {
+          "name": "Dagster",
+          "description": "Framework pour construire et gérer des pipelines robustes avec un focus sur la testabilité.",
+          "source": "https://github.com/dagster-io/dagster",
+          "keywords": ["pipelines", "robust", "testing", "python"]
+        },
+        {
+          "name": "Jenkins",
+          "description": "Serveur d'automatisation pour exécuter des tâches planifiées ou déclenchées.",
+          "source": "https://github.com/jenkinsci/jenkins",
+          "keywords": ["automation", "ci/cd", "jobs", "server"]
+        },
+        {
+          "name": "Rundeck",
+          "description": "Outil pour automatiser des processus et planifier des jobs avec une interface conviviale.",
+          "source": "https://github.com/rundeck/rundeck",
+          "keywords": ["automation", "gui", "scheduling", "jobs"]
+        },
+        {
+          "name": "Kestra",
+          "description": "Plateforme récente pour orchestrer des workflows avec une approche declarative.",
+          "source": "https://github.com/kestra-io/kestra",
+          "keywords": ["workflows", "modern", "declarative", "ui"]
+        },
+        {
+          "name": "Mage",
+          "description": "Outil pour créer et gérer des pipelines de données en Python avec une interface intuitive.",
+          "source": "https://github.com/mage-ai/mage-ai",
+          "keywords": ["python", "pipelines", "intuitive", "collaboration"]
+        },
+        {
+          "name": "TaskWarrior",
+          "description": "Gestionnaire de tâches en ligne de commande pour automatiser et suivre des tâches.",
+          "source": "https://github.com/GothenburgBitFactory/taskwarrior",
+          "keywords": ["cli", "tasks", "automation", "simple"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Gouvernance et Sécurité des Données",
+      "description": "Logiciels pour assurer la qualité, la confidentialité, la traçabilité et la conformité des données aux normes.",
+      "keywords": ["governance", "security", "compliance", "privacy"],
+      "tools": [
+        {
+          "name": "Apache Ranger",
+          "description": "Gestion des politiques de sécurité et d'accès aux données dans des environnements Big Data.",
+          "source": "https://github.com/apache/ranger",
+          "keywords": ["security", "access control", "big data", "apache"]
+        },
+        {
+          "name": "Open Policy Agent (OPA)",
+          "description": "Moteur pour définir et appliquer des politiques de gouvernance universelles.",
+          "source": "https://github.com/open-policy-agent/opa",
+          "keywords": ["policy", "governance", "security", "flexible"]
+        },
+        {
+          "name": "Amundsen",
+          "description": "Catalogue de données pour la découverte et la gouvernance des métadonnées.",
+          "source": "https://github.com/amundsen-io/amundsen",
+          "keywords": ["metadata", "catalog", "governance", "discovery"]
+        },
+        {
+          "name": "Apache Atlas",
+          "description": "Solution pour la gestion des métadonnées et la gouvernance dans des écosystèmes Big Data.",
+          "source": "https://github.com/apache/atlas",
+          "keywords": ["metadata", "governance", "big data", "apache"]
+        },
+        {
+          "name": "Soda Core",
+          "description": "Outil pour tester et surveiller la qualité des données dans les pipelines.",
+          "source": "https://github.com/sodadata/soda-core",
+          "keywords": ["data quality", "testing", "monitoring"]
+        },
+        {
+          "name": "Great Expectations",
+          "description": "Framework pour définir et valider les attentes sur la qualité des données.",
+          "source": "https://github.com/great-expectations/great_expectations",
+          "keywords": ["data quality", "validation", "expectations"]
+        },
+        {
+          "name": "Egeria",
+          "description": "Plateforme pour la gestion et le partage des métadonnées entre systèmes.",
+          "source": "https://github.com/odpi/egeria",
+          "keywords": ["metadata", "governance", "integration"]
+        },
+        {
+          "name": "DataHub",
+          "description": "Plateforme pour gérer et explorer les métadonnées avec une interface moderne.",
+          "source": "https://github.com/datahub-project/datahub",
+          "keywords": ["metadata", "catalog", "modern", "governance"]
+        },
+        {
+          "name": "Trino",
+          "description": "Moteur SQL distribué avec des contrôles d'accès pour sécuriser les requêtes.",
+          "source": "https://github.com/trinodb/trino",
+          "keywords": ["sql", "security", "distributed", "query"]
+        },
+        {
+          "name": "HashiCorp Vault",
+          "description": "Outil pour gérer les secrets et sécuriser les accès aux données sensibles.",
+          "source": "https://github.com/hashicorp/vault",
+          "keywords": ["security", "secrets", "access", "privacy"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Développement et Intégration",
+      "description": "Environnements pour coder, intégrer des outils ou développer des solutions personnalisées (IDE, notebooks, etc.).",
+      "keywords": ["development", "integration", "coding", "IDE"],
+      "tools": [
+        {
+          "name": "Jupyter Notebook",
+          "description": "Environnement interactif pour coder et tester des analyses en Python, R, etc.",
+          "source": "https://github.com/jupyter/notebook",
+          "keywords": ["notebook", "python", "interactive", "data science"]
+        },
+        {
+          "name": "VS Code",
+          "description": "Éditeur de code léger avec support pour Python, R, et extensions data science.",
+          "source": "https://github.com/microsoft/vscode",
+          "keywords": ["ide", "coding", "lightweight", "extensions"]
+        },
+        {
+          "name": "Git",
+          "description": "Système de contrôle de version pour collaborer sur des projets de code.",
+          "source": "https://github.com/git/git",
+          "keywords": ["version control", "collaboration", "git"]
+        },
+        {
+          "name": "Apache Zeppelin",
+          "description": "Notebooks collaboratifs pour l'analyse de données avec plusieurs langages.",
+          "source": "https://github.com/apache/zeppelin",
+          "keywords": ["notebook", "collaboration", "multilanguage", "apache"]
+        },
+        {
+          "name": "RStudio",
+          "description": "IDE dédié au langage R pour le développement et l'analyse de données.",
+          "source": "https://github.com/rstudio/rstudio",
+          "keywords": ["r", "ide", "data analysis", "development"]
+        },
+        {
+          "name": "Eclipse",
+          "description": "IDE polyvalent pour développer des applications et intégrer des outils.",
+          "source": "https://github.com/eclipse-platform/eclipse.platform",
+          "keywords": ["ide", "java", "development", "integration"]
+        },
+        {
+          "name": "PyCharm Community",
+          "description": "IDE Python avec des outils pour le développement et le débogage.",
+          "source": "https://github.com/JetBrains/intellij-community",
+          "keywords": ["python", "ide", "debugging", "community"]
+        },
+        {
+          "name": "Spyder",
+          "description": "IDE scientifique pour Python, intégré avec des outils comme NumPy et Pandas.",
+          "source": "https://github.com/spyder-ide/spyder",
+          "keywords": ["python", "scientific", "ide", "data science"]
+        },
+        {
+          "name": "IntelliJ IDEA Community",
+          "description": "IDE puissant pour le développement multi-langages avec intégration.",
+          "source": "https://github.com/JetBrains/intellij-community",
+          "keywords": ["ide", "java", "multi-language", "integration"]
+        },
+        {
+          "name": "Nbdev",
+          "description": "Outil pour développer des bibliothèques Python directement dans des notebooks.",
+          "source": "https://github.com/fastai/nbdev",
+          "keywords": ["notebook", "python", "development", "library"]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Collaboration et Partage",
+      "description": "Plateformes pour travailler en équipe, partager des résultats ou documenter des projets de données.",
+      "keywords": ["collaboration", "sharing", "teamwork", "documentation"],
+      "tools": [
+        {
+          "name": "CKAN",
+          "description": "Plateforme pour gérer et partager des jeux de données ouverts avec un portail.",
+          "source": "https://github.com/ckan/ckan",
+          "keywords": ["open data", "sharing", "portal", "management"]
+        },
+        {
+          "name": "Gitea",
+          "description": "Alternative légère à GitHub pour héberger du code et collaborer en équipe.",
+          "source": "https://github.com/go-gitea/gitea",
+          "keywords": ["git", "collaboration", "lightweight", "self-hosted"]
+        },
+        {
+          "name": "Nextcloud",
+          "description": "Solution pour partager des fichiers et collaborer en équipe avec synchronisation.",
+          "source": "https://github.com/nextcloud/server",
+          "keywords": ["file sharing", "sync", "collaboration", "cloud"]
+        },
+        {
+          "name": "Mattermost",
+          "description": "Plateforme de messagerie pour la collaboration en équipe, alternative à Slack.",
+          "source": "https://github.com/mattermost/mattermost-server",
+          "keywords": ["messaging", "team", "collaboration", "chat"]
+        },
+        {
+          "name": "OwnCloud",
+          "description": "Solution de stockage et partage de fichiers avec des fonctionnalités collaboratives.",
+          "source": "https://github.com/owncloud/core",
+          "keywords": ["file sharing", "cloud", "collaboration"]
+        },
+        {
+          "name": "Rocket.Chat",
+          "description": "Plateforme de chat open source pour la collaboration en temps réel.",
+          "source": "https://github.com/RocketChat/Rocket.Chat",
+          "keywords": ["chat", "real-time", "team", "collaboration"]
+        },
+        {
+          "name": "Taiga",
+          "description": "Outil de gestion de projets agile pour collaborer sur des tâches data.",
+          "source": "https://github.com/taigaio/taiga-back",
+          "keywords": ["project management", "agile", "collaboration"]
+        },
+        {
+          "name": "Redmine",
+          "description": "Outil flexible pour gérer des projets et partager des ressources en équipe.",
+          "source": "https://github.com/redmine/redmine",
+          "keywords": ["project management", "team", "sharing"]
+        },
+        {
+          "name": "Etherpad",
+          "description": "Éditeur collaboratif en temps réel pour rédiger des documents en équipe.",
+          "source": "https://github.com/ether/etherpad-lite",
+          "keywords": ["real-time", "editing", "collaboration", "docs"]
+        },
+        {
+          "name": "GitLab",
+          "description": "Plateforme complète pour gérer du code, collaborer et déployer des projets.",
+          "source": "https://github.com/gitlabhq/gitlabhq",
+          "keywords": ["git", "collaboration", "devops", "self-hosted"]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Monitoring et Performance",
+      "description": "Outils pour surveiller les systèmes, mesurer les performances des pipelines ou détecter les problèmes.",
+      "keywords": ["monitoring", "performance", "alerts", "diagnostics"],
+      "tools": [
+        {
+          "name": "Prometheus",
+          "description": "Système de monitoring et d'alertes pour les infrastructures et applications.",
+          "source": "https://github.com/prometheus/prometheus",
+          "keywords": ["monitoring", "alerts", "metrics", "time-series"]
+        },
+        {
+          "name": "Nagios",
+          "description": "Outil classique pour surveiller les performances des systèmes et réseaux.",
+          "source": "https://github.com/NagiosEnterprises/nagioscore",
+          "keywords": ["monitoring", "network", "systems", "alerts"]
+        },
+        {
+          "name": "Apache SkyWalking",
+          "description": "Monitoring des performances pour les applications distribuées.",
+          "source": "https://github.com/apache/skywalking",
+          "keywords": ["distributed", "performance", "monitoring", "apache"]
+        },
+        {
+          "name": "Zabbix",
+          "description": "Solution de monitoring pour les réseaux, serveurs et applications avec alertes.",
+          "source": "https://github.com/zabbix/zabbix",
+          "keywords": ["monitoring", "network", "alerts", "server"]
+        },
+        {
+          "name": "Grafana Tempo",
+          "description": "Outil de tracing distribué pour analyser les performances des systèmes.",
+          "source": "https://github.com/grafana/tempo",
+          "keywords": ["tracing", "performance", "grafana", "distributed"]
+        },
+        {
+          "name": "Elastic APM",
+          "description": "Monitoring des performances des applications avec intégration Elastic.",
+          "source": "https://github.com/elastic/apm-server",
+          "keywords": ["apm", "performance", "elastic", "monitoring"]
+        },
+        {
+          "name": "Netdata",
+          "description": "Outil de monitoring en temps réel pour les systèmes et applications.",
+          "source": "https://github.com/netdata/netdata",
+          "keywords": ["real-time", "monitoring", "systems", "performance"]
+        },
+        {
+          "name": "OpenTelemetry",
+          "description": "Framework pour collecter des métriques, traces et logs pour le monitoring.",
+          "source": "https://github.com/open-telemetry/opentelemetry-collector",
+          "keywords": ["telemetry", "metrics", "tracing", "logs"]
+        },
+        {
+          "name": "Checkmk",
+          "description": "Solution de monitoring pour surveiller serveurs, réseaux et applications.",
+          "source": "https://github.com/tribe29/checkmk",
+          "keywords": ["monitoring", "servers", "network", "alerts"]
+        },
+        {
+          "name": "Icinga",
+          "description": "Outil de monitoring open source pour les infrastructures avec notifications.",
+          "source": "https://github.com/Icinga/icinga2",
+          "keywords": ["monitoring", "infrastructure", "notifications"]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Infrastructure et Cloud",
+      "description": "Solutions pour gérer l'infrastructure (serveurs, conteneurs, cloud) supportant les projets de données.",
+      "keywords": ["infrastructure", "cloud", "containers", "servers"],
+      "tools": [
+        {
+          "name": "Docker",
+          "description": "Conteneurisation pour déployer des outils et applications facilement.",
+          "source": "https://github.com/docker/docker-ce",
+          "keywords": ["containers", "deployment", "docker"]
+        },
+        {
+          "name": "Kubernetes",
+          "description": "Orchestration de conteneurs pour gérer des déploiements à grande échelle.",
+          "source": "https://github.com/kubernetes/kubernetes",
+          "keywords": ["orchestration", "containers", "scalability"]
+        },
+        {
+          "name": "OpenStack",
+          "description": "Plateforme pour construire des infrastructures cloud privées ou publiques.",
+          "source": "https://github.com/openstack/openstack",
+          "keywords": ["cloud", "infrastructure", "private", "public"]
+        },
+        {
+          "name": "Terraform",
+          "description": "Outil pour provisionner et gérer l'infrastructure via du code (IaC).",
+          "source": "https://github.com/hashicorp/terraform",
+          "keywords": ["iac", "infrastructure", "provisioning"]
+        },
+        {
+          "name": "Ansible",
+          "description": "Outil d'automatisation pour configurer et gérer des serveurs.",
+          "source": "https://github.com/ansible/ansible",
+          "keywords": ["automation", "servers", "configuration"]
+        },
+        {
+          "name": "Puppet",
+          "description": "Solution pour automatiser la gestion de l'infrastructure et des serveurs.",
+          "source": "https://github.com/puppetlabs/puppet",
+          "keywords": ["automation", "infrastructure", "servers"]
+        },
+        {
+          "name": "Chef",
+          "description": "Outil pour automatiser la configuration et la gestion des infrastructures.",
+          "source": "https://github.com/chef/chef",
+          "keywords": ["automation", "configuration", "infrastructure"]
+        },
+        {
+          "name": "SaltStack",
+          "description": "Plateforme pour gérer et automatiser les infrastructures à grande échelle.",
+          "source": "https://github.com/saltstack/salt",
+          "keywords": ["automation", "scalability", "infrastructure"]
+        },
+        {
+          "name": "Nomad",
+          "description": "Orchestrateur simple pour déployer et gérer des applications conteneurisées.",
+          "source": "https://github.com/hashicorp/nomad",
+          "keywords": ["orchestration", "containers", "simple"]
+        },
+        {
+          "name": "Proxmox VE",
+          "description": "Plateforme pour gérer des machines virtuelles et conteneurs.",
+          "source": "https://github.com/proxmox/pve-manager",
+          "keywords": ["virtualization", "containers", "management"]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Outils Spécifiques au Big Data",
+      "description": "Technologies pour le traitement distribué et l'analyse de volumes massifs de données.",
+      "keywords": ["big data", "distributed", "processing", "analytics"],
+      "tools": [
+        {
+          "name": "Apache Hadoop",
+          "description": "Écosystème pour le stockage et le traitement distribué de grandes données.",
+          "source": "https://github.com/apache/hadoop",
+          "keywords": ["hadoop", "big data", "distributed", "storage"]
+        },
+        {
+          "name": "Apache Spark",
+          "description": "Moteur de traitement rapide pour le Big Data en mémoire.",
+          "source": "https://github.com/apache/spark",
+          "keywords": ["spark", "big data", "in-memory", "processing"]
+        },
+        {
+          "name": "Apache Kafka",
+          "description": "Plateforme de streaming pour gérer des données massives en temps réel.",
+          "source": "https://github.com/apache/kafka",
+          "keywords": ["streaming", "big data", "real-time", "kafka"]
+        },
+        {
+          "name": "Apache Flink",
+          "description": "Moteur pour le traitement de données massives en streaming ou batch.",
+          "source": "https://github.com/apache/flink",
+          "keywords": ["streaming", "batch", "big data", "flink"]
+        },
+        {
+          "name": "Apache Storm",
+          "description": "Système pour le traitement en temps réel de flux de données massifs.",
+          "source": "https://github.com/apache/storm",
+          "keywords": ["real-time", "streaming", "big data", "storm"]
+        },
+        {
+          "name": "HBase",
+          "description": "Base de données distribuée pour le Big Data sur HDFS.",
+          "source": "https://github.com/apache/hbase",
+          "keywords": ["database", "big data", "hadoop", "distributed"]
+        },
+        {
+          "name": "Apache Hive",
+          "description": "Entrepôt de données pour interroger le Big Data avec SQL.",
+          "source": "https://github.com/apache/hive",
+          "keywords": ["sql", "big data", "warehouse", "hive"]
+        },
+        {
+          "name": "Apache Pig",
+          "description": "Plateforme pour analyser de grands datasets avec un langage simple.",
+          "source": "https://github.com/apache/pig",
+          "keywords": ["big data", "analysis", "scripting", "pig"]
+        },
+        {
+          "name": "Apache Drill",
+          "description": "Moteur SQL pour explorer des données massives sans schéma fixe.",
+          "source": "https://github.com/apache/drill",
+          "keywords": ["sql", "big data", "schema-less", "drill"]
+        },
+        {
+          "name": "Presto",
+          "description": "Moteur SQL distribué pour des requêtes rapides sur le Big Data.",
+          "source": "https://github.com/prestodb/presto",
+          "keywords": ["sql", "big data", "fast", "distributed"]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Édition et Publication de Données",
+      "description": "Outils pour rendre les données accessibles au public ou à des partenaires via des portails ou des API.",
+      "keywords": ["publishing", "open data", "portals", "api"],
+      "tools": [
+        {
+          "name": "CKAN",
+          "description": "Plateforme pour publier et gérer des jeux de données ouverts via un portail.",
+          "source": "https://github.com/ckan/ckan",
+          "keywords": ["open data", "portal", "publishing", "management"]
+        },
+        {
+          "name": "DKAN",
+          "description": "Alternative basée sur Drupal à CKAN pour publier des données ouvertes.",
+          "source": "https://github.com/GetDKAN/dkan",
+          "keywords": ["open data", "drupal", "portal", "publishing"]
+        },
+        {
+          "name": "DataHub",
+          "description": "Plateforme pour partager et publier des métadonnées et datasets.",
+          "source": "https://github.com/datahub-project/datahub",
+          "keywords": ["metadata", "sharing", "publishing", "platform"]
+        },
+        {
+          "name": "Socrata Open Data (version open source)",
+          "description": "Outils pour créer des portails de données publiques avec une approche simple.",
+          "source": "https://github.com/socrata",
+          "keywords": ["open data", "portal", "simple", "publishing"]
+        },
+        {
+          "name": "OpenDataSoft (version communautaire)",
+          "description": "Plateforme pour publier des données avec des API et visualisations.",
+          "source": "https://www.opendatasoft.com/",
+          "keywords": ["open data", "api", "visualization", "platform"]
+        },
+        {
+          "name": "uData",
+          "description": "Plateforme légère pour publier des données ouvertes avec un accent sur la simplicité.",
+          "source": "https://github.com/opendatateam/udata",
+          "keywords": ["open data", "lightweight", "publishing"]
+        },
+        {
+          "name": "Frictionless Data",
+          "description": "Spécifications et outils pour publier des données standardisées.",
+          "source": "https://github.com/frictionlessdata",
+          "keywords": ["standards", "publishing", "data packages"]
+        },
+        {
+          "name": "Datasette",
+          "description": "Outil pour publier des bases de données SQLite sous forme d'API et de pages web.",
+          "source": "https://github.com/simonw/datasette",
+          "keywords": ["sqlite", "api", "publishing", "simple"]
+        },
+        {
+          "name": "Apache NiFi",
+          "description": "Outil pour automatiser la publication de données vers diverses cibles.",
+          "source": "https://github.com/apache/nifi",
+          "keywords": ["automation", "data flow", "publishing", "apache"]
+        },
+        {
+          "name": "ODK Central",
+          "description": "Serveur pour collecter et publier des données de formulaires mobiles.",
+          "source": "https://github.com/getodk/central",
+          "keywords": ["mobile", "forms", "publishing", "data collection"]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Outils de Simulation et Modélisation",
+      "description": "Logiciels pour simuler des scénarios ou modéliser des systèmes complexes (ex. : économie, climat).",
+      "keywords": ["simulation", "modeling", "scenarios", "complex systems"],
+      "tools": [
+        {
+          "name": "GAMA Platform",
+          "description": "Outil pour simuler des systèmes complexes (ex. : épidémies, trafic).",
+          "source": "https://github.com/gama-platform/gama",
+          "keywords": ["simulation", "complex systems", "agent-based"]
+        },
+        {
+          "name": "NetLogo",
+          "description": "Environnement pour modéliser des systèmes multi-agents.",
+          "source": "https://github.com/NetLogo/NetLogo",
+          "keywords": ["agent-based", "modeling", "simulation"]
+        },
+        {
+          "name": "SUMO",
+          "description": "Simulateur open source pour la modélisation du trafic routier.",
+          "source": "https://github.com/eclipse/sumo",
+          "keywords": ["traffic", "simulation", "transportation"]
+        },
+        {
+          "name": "OpenModelica",
+          "description": "Outil pour modéliser et simuler des systèmes physiques complexes.",
+          "source": "https://github.com/OpenModelica/OpenModelica",
+          "keywords": ["physical systems", "modeling", "simulation"]
+        },
+        {
+          "name": "SimPy",
+          "description": "Bibliothèque Python pour la simulation de processus discrets.",
+          "source": "https://github.com/simpy/simpy",
+          "keywords": ["python", "discrete", "simulation"]
+        },
+        {
+          "name": "Repast",
+          "description": "Plateforme pour la simulation multi-agents et la modélisation sociale.",
+          "source": "https://github.com/Repast/repast4py",
+          "keywords": ["agent-based", "social", "simulation"]
+        },
+        {
+          "name": "Mesa",
+          "description": "Bibliothèque Python pour la simulation multi-agents.",
+          "source": "https://github.com/projectmesa/mesa",
+          "keywords": ["python", "agent-based", "simulation"]
+        },
+        {
+          "name": "AnyLogic (version open source limitée)",
+          "description": "Outil pour modéliser et simuler des systèmes avec une interface graphique.",
+          "source": "https://www.anylogic.com/",
+          "keywords": ["gui", "simulation", "modeling", "limited"]
+        },
+        {
+          "name": "DEVS-Suite",
+          "description": "Outil pour la simulation basée sur le formalisme DEVS.",
+          "source": "https://github.com/devs-simulation/devs-suite",
+          "keywords": ["devs", "simulation", "formalism"]
+        },
+        {
+          "name": "Vensim (version PLE)",
+          "description": "Outil pour la modélisation dynamique avec une version gratuite limitée.",
+          "source": "https://vensim.com/",
+          "keywords": ["dynamics", "modeling", "simulation", "limited"]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Analyse Géospatiale",
+      "description": "Outils pour traiter, analyser et visualiser des données spatiales ou géographiques (SIG, cartes).",
+      "keywords": ["geospatial", "GIS", "mapping", "spatial analysis"],
+      "tools": [
+        {
+          "name": "QGIS",
+          "description": "Logiciel SIG pour analyser et visualiser des données géographiques.",
+          "source": "https://github.com/qgis/QGIS",
+          "keywords": ["gis", "mapping", "geospatial", "visualization"]
+        },
+        {
+          "name": "PostGIS",
+          "description": "Extension de PostgreSQL pour gérer et analyser des données spatiales.",
+          "source": "https://github.com/postgis/postgis",
+          "keywords": ["database", "spatial", "sql", "geospatial"]
+        },
+        {
+          "name": "GRASS GIS",
+          "description": "Outil avancé pour l'analyse géospatiale et la cartographie.",
+          "source": "https://github.com/OSGeo/grass",
+          "keywords": ["gis", "advanced", "mapping", "analysis"]
+        },
+        {
+          "name": "GeoPandas",
+          "description": "Bibliothèque Python pour manipuler et analyser des données géospatiales.",
+          "source": "https://github.com/geopandas/geopandas",
+          "keywords": ["python", "geospatial", "analysis", "data"]
+        },
+        {
+          "name": "Leaflet",
+          "description": "Bibliothèque JavaScript pour créer des cartes interactives légères.",
+          "source": "https://github.com/Leaflet/Leaflet",
+          "keywords": ["javascript", "maps", "interactive", "lightweight"]
+        },
+        {
+          "name": "OpenLayers",
+          "description": "Bibliothèque JavaScript pour des cartes interactives riches.",
+          "source": "https://github.com/openlayers/openlayers",
+          "keywords": ["javascript", "maps", "interactive", "rich"]
+        },
+        {
+          "name": "GDAL",
+          "description": "Bibliothèque pour manipuler et convertir des formats de données géospatiales.",
+          "source": "https://github.com/OSGeo/gdal",
+          "keywords": ["geospatial", "conversion", "data", "library"]
+        },
+        {
+          "name": "SAGA GIS",
+          "description": "Système pour l'analyse géospatiale et la modélisation.",
+          "source": "https://github.com/saga-gis/saga",
+          "keywords": ["gis", "analysis", "modeling", "geospatial"]
+        },
+        {
+          "name": "Rspatial",
+          "description": "Packages R pour l'analyse et la visualisation de données géospatiales.",
+          "source": "https://github.com/r-spatial",
+          "keywords": ["r", "geospatial", "analysis", "visualization"]
+        },
+        {
+          "name": "MapServer",
+          "description": "Serveur pour publier des cartes géospatiales sur le web.",
+          "source": "https://github.com/MapServer/MapServer",
+          "keywords": ["web", "maps", "geospatial", "publishing"]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Outils de Text Mining et NLP",
+      "description": "Solutions pour analyser des textes, extraire des informations ou traiter le langage naturel.",
+      "keywords": ["text mining", "nlp", "natural language", "analysis"],
+      "tools": [
+        {
+          "name": "NLTK (Python)",
+          "description": "Bibliothèque pour le traitement du langage naturel et l'analyse de texte.",
+          "source": "https://github.com/nltk/nltk",
+          "keywords": ["python", "nlp", "text analysis", "linguistics"]
+        },
+        {
+          "name": "spaCy",
+          "description": "Outil performant pour l'analyse de texte et l'extraction d'entités.",
+          "source": "https://github.com/explosion/spaCy",
+          "keywords": ["nlp", "performance", "entities", "python"]
+        },
+        {
+          "name": "Gensim",
+          "description": "Bibliothèque pour le topic modeling et l'analyse sémantique de textes.",
+          "source": "https://github.com/RaRe-Technologies/gensim",
+          "keywords": ["topic modeling", "semantics", "text", "python"]
+        },
+        {
+          "name": "Stanford NLP",
+          "description": "Suite d'outils Java pour le traitement avancé du langage naturel.",
+          "source": "https://github.com/stanfordnlp/CoreNLP",
+          "keywords": ["nlp", "java", "advanced", "linguistics"]
+        },
+        {
+          "name": "TextBlob",
+          "description": "Bibliothèque Python simple pour l'analyse de texte et le NLP de base.",
+          "source": "https://github.com/sloria/TextBlob",
+          "keywords": ["python", "simple", "nlp", "text"]
+        },
+        {
+          "name": "Flair",
+          "description": "Framework NLP avec des modèles de pointe pour l'analyse de texte.",
+          "source": "https://github.com/flairNLP/flair",
+          "keywords": ["nlp", "advanced", "models", "python"]
+        },
+        {
+          "name": "Apache OpenNLP",
+          "description": "Bibliothèque Java pour le traitement du langage naturel.",
+          "source": "https://github.com/apache/opennlp",
+          "keywords": ["nlp", "java", "text", "apache"]
+        },
+        {
+          "name": "BERT (via Hugging Face)",
+          "description": "Modèles NLP pré-entraînés accessibles via la bibliothèque Transformers.",
+          "source": "https://github.com/huggingface/transformers",
+          "keywords": ["nlp", "bert", "transformers", "pre-trained"]
+        },
+        {
+          "name": "CoreNLP (Python wrapper)",
+          "description": "Wrapper Python pour utiliser Stanford CoreNLP facilement.",
+          "source": "https://github.com/stanfordnlp/stanza",
+          "keywords": ["nlp", "python", "stanford", "wrapper"]
+        },
+        {
+          "name": "Gate",
+          "description": "Plateforme pour le traitement du langage naturel et l'extraction d'information.",
+          "source": "https://github.com/GateNLP/gate-core",
+          "keywords": ["nlp", "text mining", "information extraction"]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Outils de BI (Business Intelligence)",
+      "description": "Plateformes pour l'analyse métier, le reporting et la prise de décision basée sur les données.",
+      "keywords": ["business intelligence", "bi", "reporting", "analytics"],
+      "tools": [
+        {
+          "name": "Metabase",
+          "description": "Plateforme simple pour des analyses et dashboards BI sans expertise technique.",
+          "source": "https://github.com/metabase/metabase",
+          "keywords": ["bi", "dashboards", "simple", "no-code"]
+        },
+        {
+          "name": "Apache Superset",
+          "description": "Outil BI pour créer des tableaux de bord interactifs et explorer des données.",
+          "source": "https://github.com/apache/superset",
+          "keywords": ["bi", "dashboards", "interactive", "apache"]
+        },
+        {
+          "name": "Redash",
+          "description": "Solution BI pour interroger des bases et créer des rapports partageables.",
+          "source": "https://github.com/getredash/redash",
+          "keywords": ["bi", "query", "reporting", "collaborative"]
+        },
+        {
+          "name": "Pentaho",
+          "description": "Suite complète pour l'intégration, l'analyse et le reporting BI.",
+          "source": "https://github.com/pentaho/pentaho-kettle",
+          "keywords": ["bi", "integration", "reporting", "suite"]
+        },
+        {
+          "name": "KNIME",
+          "description": "Plateforme pour l'analyse de données et la création de rapports BI sans code.",
+          "source": "https://github.com/knime/knime-core",
+          "keywords": ["bi", "no-code", "analytics", "workflows"]
+        },
+        {
+          "name": "BIRT",
+          "description": "Outil pour concevoir et générer des rapports BI personnalisés.",
+          "source": "https://github.com/eclipse/birt",
+          "keywords": ["bi", "reporting", "custom", "eclipse"]
+        },
+        {
+          "name": "SpagoBI",
+          "description": "Suite BI open source pour l'analyse et la visualisation métier.",
+          "source": "https://github.com/spagobi/SpagoBI",
+          "keywords": ["bi", "suite", "visualization", "analytics"]
+        },
+        {
+          "name": "Jaspersoft (Community Edition)",
+          "description": "Plateforme BI pour des rapports et dashboards professionnels.",
+          "source": "https://community.jaspersoft.com/",
+          "keywords": ["bi", "reporting", "dashboards", "community"]
+        },
+        {
+          "name": "ReportServer",
+          "description": "Outil BI pour la gestion et la distribution de rapports.",
+          "source": "https://github.com/infofabrik/reportserver",
+          "keywords": ["bi", "reporting", "management", "distribution"]
+        },
+        {
+          "name": "Lightdash",
+          "description": "Plateforme BI intégrée à dbt pour des analyses rapides et modernes.",
+          "source": "https://github.com/lightdash/lightdash",
+          "keywords": ["bi", "dbt", "modern", "analytics"]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Outils de Data Storytelling",
+      "description": "Solutions pour raconter des histoires avec les données et les présenter de manière engageante.",
+      "keywords": ["data storytelling", "narrative", "visualization", "communication"],
+      "tools": [
+        {
+          "name": "Observable",
+          "description": "Plateforme pour créer des récits interactifs avec des données.",
+          "source": "https://github.com/observablehq",
+          "keywords": ["interactive", "storytelling", "web", "data"]
+        },
+        {
+          "name": "D3.js",
+          "description": "Bibliothèque JavaScript pour des visualisations narratives dynamiques.",
+          "source": "https://github.com/d3/d3",
+          "keywords": ["javascript", "dynamic", "visualization", "storytelling"]
+        },
+        {
+          "name": "RAWGraphs",
+          "description": "Outil web pour transformer des données en récits visuels sans coder.",
+          "source": "https://github.com/rawgraphs/rawgraphs-core",
+          "keywords": ["no-code", "visualization", "storytelling", "web"]
+        },
+        {
+          "name": "Flourish",
+          "description": "Plateforme pour créer des visualisations et histoires interactives (version open source limitée).",
+          "source": "https://flourish.studio/",
+          "keywords": ["interactive", "storytelling", "visualization", "limited"]
+        },
+        {
+          "name": "StoryMapJS",
+          "description": "Outil pour raconter des histoires avec des cartes et des données géographiques.",
+          "source": "https://github.com/NUKnightLab/StoryMapJS",
+          "keywords": ["maps", "storytelling", "geospatial"]
+        },
+        {
+          "name": "TimelineJS",
+          "description": "Outil pour créer des chronologies interactives basées sur des données.",
+          "source": "https://github.com/NUKnightLab/TimelineJS",
+          "keywords": ["timeline", "interactive", "storytelling"]
+        },
+        {
+          "name": "Bokeh (Python)",
+          "description": "Bibliothèque pour des visualisations interactives adaptées au storytelling.",
+          "source": "https://github.com/bokeh/bokeh",
+          "keywords": ["python", "interactive", "visualization", "storytelling"]
+        },
+        {
+          "name": "Plotly (Python)",
+          "description": "Outil pour des graphiques interactifs adaptés à des récits visuels.",
+          "source": "https://github.com/plotly/plotly.py",
+          "keywords": ["python", "interactive", "charts", "storytelling"]
+        },
+        {
+          "name": "Datawrapper",
+          "description": "Outil web pour des visualisations simples et narratives (version open source limitée).",
+          "source": "https://www.datawrapper.de/",
+          "keywords": ["simple", "visualization", "storytelling", "limited"]
+        },
+        {
+          "name": "JuxtaposeJS",
+          "description": "Outil pour comparer des données visuellement dans un récit.",
+          "source": "https://github.com/NUKnightLab/JuxtaposeJS",
+          "keywords": ["comparison", "visualization", "storytelling"]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Communautés et Ressources Éducatives",
+      "description": "Plateformes ou ressources pour apprendre, échanger des connaissances et rester à jour sur les outils open source.",
+      "keywords": ["education", "community", "learning", "resources"],
+      "tools": [
+        {
+          "name": "JupyterHub",
+          "description": "Version multi-utilisateur de Jupyter pour l'enseignement et le partage.",
+          "source": "https://github.com/jupyterhub/jupyterhub",
+          "keywords": ["notebook", "education", "multi-user", "jupyter"]
+        },
+        {
+          "name": "Apache Zeppelin",
+          "description": "Notebooks collaboratifs pour partager des tutoriels et des analyses.",
+          "source": "https://github.com/apache/zeppelin",
+          "keywords": ["notebook", "collaboration", "tutorials", "apache"]
+        },
+        {
+          "name": "Raspberry Pi (avec logiciels)",
+          "description": "Plateforme abordable pour apprendre le code et l'analyse.",
+          "source": "https://www.raspberrypi.org/",
+          "keywords": ["hardware", "learning", "coding", "affordable"]
+        },
+        {
+          "name": "Open edX",
+          "description": "Plateforme pour créer et partager des cours en ligne open source.",
+          "source": "https://github.com/openedx/edx-platform",
+          "keywords": ["e-learning", "courses", "open source"]
+        },
+        {
+          "name": "Moodle",
+          "description": "Système de gestion de l'apprentissage pour des cours et ressources.",
+          "source": "https://github.com/moodle/moodle",
+          "keywords": ["lms", "education", "courses", "learning"]
+        },
+        {
+          "name": "Kaggle (contenu communautaire)",
+          "description": "Plateforme avec datasets et tutoriels créés par la communauté.",
+          "source": "https://www.kaggle.com/",
+          "keywords": ["datasets", "tutorials", "community", "learning"]
+        },
+        {
+          "name": "DataCamp Open Courses",
+          "description": "Cours gratuits sur la science des données (partiellement open source).",
+          "source": "https://www.datacamp.com/community/open-courses",
+          "keywords": ["data science", "courses", "learning", "limited"]
+        },
+        {
+          "name": "Scikit-learn Documentation",
+          "description": "Ressource éducative pour apprendre le machine learning.",
+          "source": "https://github.com/scikit-learn/scikit-learn",
+          "keywords": ["machine learning", "docs", "education"]
+        },
+        {
+          "name": "TensorFlow Tutorials",
+          "description": "Tutoriels officiels pour apprendre TensorFlow et le deep learning.",
+          "source": "https://github.com/tensorflow/docs",
+          "keywords": ["deep learning", "tutorials", "tensorflow"]
+        },
+        {
+          "name": "Awesome Data Science",
+          "description": "Liste curated de ressources pour apprendre la science des données.",
+          "source": "https://github.com/academic/awesome-datascience",
+          "keywords": ["resources", "data science", "learning", "curated"]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Extraction et Transformation de Données (ETL/ELT)",
+      "description": "Outils spécialisés dans l'extraction, la transformation et le chargement de données entre systèmes.",
+      "keywords": ["etl", "elt", "data integration", "transformation"],
+      "tools": [
+        {
+          "name": "Apache NiFi",
+          "description": "Outil pour automatiser les flux de données ETL avec une interface graphique.",
+          "source": "https://github.com/apache/nifi",
+          "keywords": ["etl", "data flow", "gui", "apache"]
+        },
+        {
+          "name": "Talend Open Studio",
+          "description": "Suite ETL avec une interface visuelle pour l'intégration de données.",
+          "source": "https://github.com/Talend",
+          "keywords": ["etl", "gui", "integration", "talend"]
+        },
+        {
+          "name": "Pentaho Data Integration",
+          "description": "Outil ETL pour capturer, transformer et charger des données.",
+          "source": "https://github.com/pentaho/pentaho-kettle",
+          "keywords": ["etl", "integration", "pentaho", "gui"]
+        },
+        {
+          "name": "Airbyte",
+          "description": "Plateforme ELT pour extraire et charger des données avec des connecteurs.",
+          "source": "https://github.com/airbytehq/airbyte",
+          "keywords": ["elt", "connectors", "integration"]
+        },
+        {
+          "name": "Singer",
+          "description": "Outil ETL simple pour composer des intégrations personnalisées.",
+          "source": "https://github.com/singer-io",
+          "keywords": ["etl", "simple", "custom", "integration"]
+        },
+        {
+          "name": "Logstash",
+          "description": "Pipeline de données pour extraire et transformer des données vers Elasticsearch.",
+          "source": "https://github.com/elastic/logstash",
+          "keywords": ["etl", "pipeline", "elasticsearch"]
+        },
+        {
+          "name": "Scriptella",
+          "description": "Outil ETL léger basé sur des scripts SQL pour des transformations simples.",
+          "source": "https://github.com/scriptella/scriptella-etl",
+          "keywords": ["etl", "sql", "lightweight", "scripting"]
+        },
+        {
+          "name": "CloverDX (version open source)",
+          "description": "Framework Java pour transformer et intégrer des données.",
+          "source": "https://www.cloverdx.com/",
+          "keywords": ["etl", "java", "integration", "limited"]
+        },
+        {
+          "name": "GeoKettle",
+          "description": "Outil ETL spatial pour intégrer des données géographiques.",
+          "source": "https://sourceforge.net/projects/geokettle/",
+          "keywords": ["etl", "geospatial", "integration"]
+        },
+        {
+          "name": "dbt",
+          "description": "Outil pour transformer des données dans des entrepôts avec SQL.",
+          "source": "https://github.com/dbt-labs/dbt-core",
+          "keywords": ["elt", "sql", "transformation", "warehouse"]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Outils de Streaming et Données en Temps Réel",
+      "description": "Solutions pour collecter, traiter et analyser des données en flux continu et en temps réel.",
+      "keywords": ["streaming", "real-time", "data flow", "processing"],
+      "tools": [
+        {
+          "name": "Apache Kafka",
+          "description": "Plateforme de streaming pour gérer des flux de données en temps réel.",
+          "source": "https://github.com/apache/kafka",
+          "keywords": ["streaming", "real-time", "kafka", "apache"]
+        },
+        {
+          "name": "Apache Flink",
+          "description": "Moteur pour traiter des données en streaming avec faible latence.",
+          "source": "https://github.com/apache/flink",
+          "keywords": ["streaming", "processing", "flink", "apache"]
+        },
+        {
+          "name": "Apache Storm",
+          "description": "Système pour le traitement en temps réel de flux de données.",
+          "source": "https://github.com/apache/storm",
+          "keywords": ["real-time", "streaming", "storm", "apache"]
+        },
+        {
+          "name": "RabbitMQ",
+          "description": "Système de messagerie pour gérer des données en streaming.",
+          "source": "https://github.com/rabbitmq/rabbitmq-server",
+          "keywords": ["messaging", "streaming", "queue"]
+        },
+        {
+          "name": "Apache Pulsar",
+          "description": "Plateforme de messaging pour le traitement en temps réel.",
+          "source": "https://github.com/apache/pulsar",
+          "keywords": ["streaming", "messaging", "pulsar", "apache"]
+        },
+        {
+          "name": "NATS",
+          "description": "Système de messagerie léger pour le streaming de données.",
+          "source": "https://github.com/nats-io/nats-server",
+          "keywords": ["messaging", "lightweight", "streaming"]
+        },
+        {
+          "name": "Redpanda",
+          "description": "Alternative à Kafka pour le streaming de données en temps réel.",
+          "source": "https://github.com/redpanda-data/redpanda",
+          "keywords": ["streaming", "real-time", "kafka-like"]
+        },
+        {
+          "name": "StreamSets",
+          "description": "Plateforme pour gérer des pipelines de streaming avec une UI.",
+          "source": "https://github.com/streamsets/datacollector",
+          "keywords": ["streaming", "pipelines", "ui"]
+        },
+        {
+          "name": "Apache Samza",
+          "description": "Framework pour le traitement de flux de données avec Kafka.",
+          "source": "https://github.com/apache/samza",
+          "keywords": ["streaming", "kafka", "samza", "apache"]
+        },
+        {
+          "name": "Kinesis Client Library",
+          "description": "Bibliothèque open source pour interagir avec AWS Kinesis pour le streaming.",
+          "source": "https://github.com/awslabs/amazon-kinesis-client",
+          "keywords": ["streaming", "aws", "real-time", "client"]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Gestion des Métadonnées",
+      "description": "Outils pour cataloguer, décrire et gérer les métadonnées afin de mieux organiser les datasets.",
+      "keywords": ["metadata", "catalog", "management", "governance"],
+      "tools": [
+        {
+          "name": "Apache Atlas",
+          "description": "Solution pour la gestion des métadonnées et la gouvernance dans le Big Data.",
+          "source": "https://github.com/apache/atlas",
+          "keywords": ["metadata", "governance", "big data", "apache"]
+        },
+        {
+          "name": "OpenMetadata",
+          "description": "Plateforme moderne pour cataloguer et gérer les métadonnées.",
+          "source": "https://github.com/open-metadata/OpenMetadata",
+          "keywords": ["metadata", "catalog", "modern", "management"]
+        },
+        {
+          "name": "DataHub",
+          "description": "Plateforme pour gérer et explorer les métadonnées avec une interface moderne.",
+          "source": "https://github.com/datahub-project/datahub",
+          "keywords": ["metadata", "catalog", "modern", "exploration"]
+        },
+        {
+          "name": "Amundsen",
+          "description": "Catalogue de données pour la découverte et la gestion des métadonnées.",
+          "source": "https://github.com/amundsen-io/amundsen",
+          "keywords": ["metadata", "catalog", "discovery", "management"]
+        },
+        {
+          "name": "CKAN",
+          "description": "Plateforme avec des capacités de gestion des métadonnées pour les données ouvertes.",
+          "source": "https://github.com/ckan/ckan",
+          "keywords": ["open data", "metadata", "catalog", "management"]
+        },
+        {
+          "name": "Egeria",
+          "description": "Plateforme pour la gestion et le partage des métadonnées entre systèmes.",
+          "source": "https://github.com/odpi/egeria",
+          "keywords": ["metadata", "governance", "integration", "sharing"]
+        },
+        {
+          "name": "Metacat",
+          "description": "Système de gestion des métadonnées pour les environnements Big Data.",
+          "source": "https://github.com/Netflix/metacat",
+          "keywords": ["metadata", "big data", "management", "netflix"]
+        },
+        {
+          "name": "Marquez",
+          "description": "Outil pour collecter et gérer les métadonnées des pipelines de données.",
+          "source": "https://github.com/MarquezProject/marquez",
+          "keywords": ["metadata", "pipelines", "management"]
+        },
+        {
+          "name": "ODPi Egeria",
+          "description": "Framework pour la gouvernance et la gestion des métadonnées.",
+          "source": "https://github.com/odpi/egeria",
+          "keywords": ["metadata", "governance", "framework"]
+        },
+        {
+          "name": "Trino (avec catalog)",
+          "description": "Moteur SQL avec gestion des métadonnées pour les sources de données.",
+          "source": "https://github.com/trinodb/trino",
+          "keywords": ["metadata", "sql", "catalog", "query"]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Outils d'Exploration de Données (Data Mining)",
+      "description": "Logiciels pour identifier des motifs, corrélations ou tendances cachées dans les données.",
+      "keywords": ["data mining", "exploration", "patterns", "trends"],
+      "tools": [
+        {
+          "name": "Weka",
+          "description": "Suite pour l'exploration et l'analyse de données avec des algorithmes de data mining.",
+          "source": "https://github.com/Waikato/weka-trunk",
+          "keywords": ["data mining", "gui", "algorithms", "analysis"]
+        },
+        {
+          "name": "RapidMiner (version open source)",
+          "description": "Plateforme pour fouiller les données avec une interface visuelle.",
+          "source": "https://github.com/rapidminer/rapidminer",
+          "keywords": ["data mining", "gui", "visual", "rapidminer"]
+        },
+        {
+          "name": "KNIME",
+          "description": "Environnement pour explorer et modéliser les données sans coder.",
+          "source": "https://github.com/knime/knime-core",
+          "keywords": ["data mining", "no-code", "workflows", "exploration"]
+        },
+        {
+          "name": "Orange",
+          "description": "Outil avec interface graphique pour explorer et tester des algorithmes de data mining.",
+          "source": "https://github.com/biolab/orange3",
+          "keywords": ["data mining", "gui", "exploration", "no-code"]
+        },
+        {
+          "name": "Apache Mahout",
+          "description": "Outil pour le data mining sur des données massives avec Hadoop.",
+          "source": "https://github.com/apache/mahout",
+          "keywords": ["data mining", "big data", "hadoop", "apache"]
+        },
+        {
+          "name": "scikit-learn (Python)",
+          "description": "Bibliothèque Python avec des outils pour le data mining et l'analyse.",
+          "source": "https://github.com/scikit-learn/scikit-learn",
+          "keywords": ["python", "data mining", "machine learning", "analysis"]
+        },
+        {
+          "name": "ELKI",
+          "description": "Framework Java pour l'exploration de données et le clustering.",
+          "source": "https://github.com/elki-project/elki",
+          "keywords": ["data mining", "java", "clustering", "exploration"]
+        },
+        {
+          "name": "Rattle (R)",
+          "description": "Interface graphique en R pour l'exploration de données et le data mining.",
+          "source": "https://github.com/cran/rattle",
+          "keywords": ["r", "data mining", "gui", "exploration"]
+        },
+        {
+          "name": "Tanagra",
+          "description": "Outil pour l'analyse statistique et le data mining avec une interface simple.",
+          "source": "https://eric.univ-lyon2.fr/~ricco/tanagra/en/tanagra.html",
+          "keywords": ["data mining", "statistics", "gui", "simple"]
+        },
+        {
+          "name": "H2O.ai",
+          "description": "Plateforme avec des capacités de data mining et d'AutoML.",
+          "source": "https://github.com/h2oai/h2o-3",
+          "keywords": ["data mining", "automl", "analysis", "platform"]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Outils de Compression et Optimisation des Données",
+      "description": "Solutions pour réduire la taille des données ou optimiser leur stockage et leur transfert.",
+      "keywords": ["compression", "optimization", "storage", "transfer"],
+      "tools": [
+        {
+          "name": "Zlib",
+          "description": "Bibliothèque pour compresser des données efficacement avec l'algorithme DEFLATE.",
+          "source": "https://github.com/madler/zlib",
+          "keywords": ["compression", "library", "deflate", "efficient"]
+        },
+        {
+          "name": "Snappy",
+          "description": "Algorithme de compression rapide pour les bases de données et applications.",
+          "source": "https://github.com/google/snappy",
+          "keywords": ["compression", "fast", "database", "google"]
+        },
+        {
+          "name": "Apache Parquet",
+          "description": "Format de stockage optimisé pour les données analytiques avec compression.",
+          "source": "https://github.com/apache/parquet-mr",
+          "keywords": ["compression", "storage", "analytics", "apache"]
+        },
+        {
+          "name": "Apache ORC",
+          "description": "Format de fichier optimisé pour le stockage compressé dans Hadoop.",
+          "source": "https://github.com/apache/orc",
+          "keywords": ["compression", "hadoop", "storage", "apache"]
+        },
+        {
+          "name": "Bzip2",
+          "description": "Outil de compression offrant un bon taux avec une vitesse modérée.",
+          "source": "https://sourceware.org/bzip2/",
+          "keywords": ["compression", "tool", "efficient", "bzip"]
+        },
+        {
+          "name": "LZ4",
+          "description": "Algorithme de compression ultra-rapide pour des performances élevées.",
+          "source": "https://github.com/lz4/lz4",
+          "keywords": ["compression", "fast", "performance"]
+        },
+        {
+          "name": "Zstandard (Zstd)",
+          "description": "Algorithme moderne pour une compression rapide et efficace.",
+          "source": "https://github.com/facebook/zstd",
+          "keywords": ["compression", "modern", "fast", "facebook"]
+        },
+        {
+          "name": "Gzip",
+          "description": "Outil classique pour compresser des fichiers avec l'algorithme DEFLATE.",
+          "source": "https://www.gnu.org/software/gzip/",
+          "keywords": ["compression", "tool", "deflate", "classic"]
+        },
+        {
+          "name": "Blosc",
+          "description": "Bibliothèque de compression rapide pour les données numériques.",
+          "source": "https://github.com/Blosc/c-blosc",
+          "keywords": ["compression", "numerical", "fast", "library"]
+        },
+        {
+          "name": "Apache Avro",
+          "description": "Système de sérialisation avec compression pour les données structurées.",
+          "source": "https://github.com/apache/avro",
+          "keywords": ["compression", "serialization", "structured", "apache"]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Outils de Test et Validation des Données",
+      "description": "Logiciels pour vérifier l'exactitude, la cohérence et la qualité des données.",
+      "keywords": ["data testing", "validation", "quality", "integrity"],
+      "tools": [
+        {
+          "name": "Great Expectations",
+          "description": "Framework pour définir et valider les attentes sur la qualité des données.",
+          "source": "https://github.com/great-expectations/great_expectations",
+          "keywords": ["data quality", "validation", "expectations", "python"]
+        },
+        {
+          "name": "Deequ",
+          "description": "Bibliothèque pour tester les données sur Spark avec des métriques de qualité.",
+          "source": "https://github.com/awslabs/deequ",
+          "keywords": ["data quality", "testing", "spark", "metrics"]
+        },
+        {
+          "name": "Soda SQL",
+          "description": "Outil pour définir des tests de qualité des données dans les bases SQL.",
+          "source": "https://github.com/sodadata/soda-sql",
+          "keywords": ["data quality", "sql", "testing", "validation"]
+        },
+        {
+          "name": "Pandas Profiling",
+          "description": "Outil Python pour profiler et valider la qualité des données tabulaires.",
+          "source": "https://github.com/pandas-profiling/pandas-profiling",
+          "keywords": ["python", "profiling", "data quality", "validation"]
+        },
+        {
+          "name": "Apache Griffin",
+          "description": "Plateforme pour mesurer et valider la qualité des données dans le Big Data.",
+          "source": "https://github.com/apache/griffin",
+          "keywords": ["data quality", "big data", "validation", "apache"]
+        },
+        {
+          "name": "DataCleaner",
+          "description": "Outil pour profiler et valider les données avec une interface graphique.",
+          "source": "https://github.com/datacleaner/DataCleaner",
+          "keywords": ["profiling", "validation", "gui", "data quality"]
+        },
+        {
+          "name": "Talend Open Studio (validation)",
+          "description": "Suite ETL avec des fonctionnalités de validation de données.",
+          "source": "https://github.com/Talend",
+          "keywords": ["etl", "validation", "data quality", "gui"]
+        },
+        {
+          "name": "DQOps",
+          "description": "Plateforme pour surveiller et valider la qualité des données.",
+          "source": "https://github.com/dqops/dqo",
+          "keywords": ["data quality", "monitoring", "validation"]
+        },
+        {
+          "name": "PyDeequ",
+          "description": "Wrapper Python pour Deequ, facilitant les tests sur Spark.",
+          "source": "https://github.com/awslabs/python-deequ",
+          "keywords": ["python", "data quality", "spark", "testing"]
+        },
+        {
+          "name": "Cerberus",
+          "description": "Bibliothèque Python légère pour valider des structures de données.",
+          "source": "https://github.com/pyeve/cerberus",
+          "keywords": ["python", "validation", "lightweight", "data structures"]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Gestion de Projets Data",
+      "description": "Outils pour planifier, suivre et gérer les projets liés aux données (calendriers, tâches).",
+      "keywords": ["project management", "data projects", "planning", "tracking"],
+      "tools": [
+        {
+          "name": "OpenProject",
+          "description": "Logiciel de gestion de projets avec des outils pour équipes data.",
+          "source": "https://github.com/opf/openproject",
+          "keywords": ["project management", "collaboration", "planning"]
+        },
+        {
+          "name": "Taiga",
+          "description": "Plateforme agile pour gérer des projets data en équipe.",
+          "source": "https://github.com/taigaio/taiga-back",
+          "keywords": ["agile", "project management", "team", "data"]
+        },
+        {
+          "name": "Redmine",
+          "description": "Outil flexible pour planifier et suivre des projets de données.",
+          "source": "https://github.com/redmine/redmine",
+          "keywords": ["project management", "tracking", "flexible"]
+        },
+        {
+          "name": "Gitea",
+          "description": "Système de gestion de code avec suivi de projets intégré.",
+          "source": "https://github.com/go-gitea/gitea",
+          "keywords": ["git", "project management", "lightweight"]
+        },
+        {
+          "name": "GitLab",
+          "description": "Plateforme complète pour gérer des projets data avec suivi des tâches.",
+          "source": "https://github.com/gitlabhq/gitlabhq",
+          "keywords": ["git", "project management", "tasks", "devops"]
+        },
+        {
+          "name": "Jira (version open source limitée)",
+          "description": "Outil de gestion de projets avec des fonctionnalités agiles (version communautaire limitée).",
+          "source": "https://www.atlassian.com/software/jira",
+          "keywords": ["agile", "project management", "limited"]
+        },
+        {
+          "name": "Odoo (module projet)",
+          "description": "ERP open source avec un module pour gérer des projets data.",
+          "source": "https://github.com/odoo/odoo",
+          "keywords": ["erp", "project management", "data", "module"]
+        },
+        {
+          "name": "Kanboard",
+          "description": "Outil léger pour gérer des tâches et projets avec une approche Kanban.",
+          "source": "https://github.com/kanboard/kanboard",
+          "keywords": ["kanban", "project management", "lightweight"]
+        },
+        {
+          "name": "Leantime",
+          "description": "Plateforme pour gérer des projets avec un focus sur la simplicité.",
+          "source": "https://github.com/Leantime/leantime",
+          "keywords": ["project management", "simple", "planning"]
+        },
+        {
+          "name": "TaskJuggler",
+          "description": "Outil pour planifier et optimiser des projets complexes.",
+          "source": "https://github.com/taskjuggler/TaskJuggler",
+          "keywords": ["project management", "planning", "optimization"]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Outils de Blockchain pour les Données",
+      "description": "Solutions pour sécuriser, tracer ou certifier les données via des technologies décentralisées.",
+      "keywords": ["blockchain", "security", "traceability", "decentralized"],
+      "tools": [
+        {
+          "name": "Hyperledger Fabric",
+          "description": "Plateforme blockchain pour des applications sécurisées et traçables.",
+          "source": "https://github.com/hyperledger/fabric",
+          "keywords": ["blockchain", "security", "enterprise", "hyperledger"]
+        },
+        {
+          "name": "Ethereum (outils open source)",
+          "description": "Plateforme décentralisée avec des smart contracts pour tracer des données.",
+          "source": "https://github.com/ethereum/go-ethereum",
+          "keywords": ["blockchain", "smart contracts", "ethereum"]
+        },
+        {
+          "name": "BigchainDB",
+          "description": "Base de données décentralisée pour la traçabilité des données.",
+          "source": "https://github.com/bigchaindb/bigchaindb",
+          "keywords": ["blockchain", "database", "traceability"]
+        },
+        {
+          "name": "Corda (open source)",
+          "description": "Plateforme blockchain pour des transactions sécurisées et privées.",
+          "source": "https://github.com/corda/corda",
+          "keywords": ["blockchain", "security", "privacy", "transactions"]
+        },
+        {
+          "name": "Multichain",
+          "description": "Plateforme pour créer des blockchains privées avec gestion de données.",
+          "source": "https://github.com/MultiChain/multichain",
+          "keywords": ["blockchain", "private", "data management"]
+        },
+        {
+          "name": "OpenChain",
+          "description": "Système blockchain léger pour gérer des actifs numériques.",
+          "source": "https://github.com/openchain/openchain",
+          "keywords": ["blockchain", "lightweight", "assets"]
+        },
+        {
+          "name": "Sawtooth",
+          "description": "Plateforme blockchain modulaire pour des applications personnalisées.",
+          "source": "https://github.com/hyperledger/sawtooth-core",
+          "keywords": ["blockchain", "modular", "hyperledger"]
+        },
+        {
+          "name": "IOTA (Tangle)",
+          "description": "Technologie distribuée pour des données sécurisées sans frais.",
+          "source": "https://github.com/iotaledger",
+          "keywords": ["blockchain", "tangle", "security", "iot"]
+        },
+        {
+          "name": "Chainlink (open source components)",
+          "description": "Réseau décentralisé pour connecter des données externes à la blockchain.",
+          "source": "https://github.com/smartcontractkit/chainlink",
+          "keywords": ["blockchain", "oracles", "data integration"]
+        },
+        {
+          "name": "Tendermint",
+          "description": "Moteur blockchain pour développer des applications sécurisées.",
+          "source": "https://github.com/tendermint/tendermint",
+          "keywords": ["blockchain", "security", "development"]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Outils de Synthèse et Génération de Données",
+      "description": "Logiciels pour créer des données synthétiques ou simuler des jeux de données pour tests.",
+      "keywords": ["synthetic data", "generation", "simulation", "testing"],
+      "tools": [
+        {
+          "name": "Faker (Python)",
+          "description": "Bibliothèque pour générer des données synthétiques réalistes.",
+          "source": "https://github.com/joke2k/faker",
+          "keywords": ["python", "synthetic data", "generation", "realistic"]
+        },
+        {
+          "name": "SDV (Synthetic Data Vault)",
+          "description": "Outil pour créer des données artificielles réalistes à partir de datasets.",
+          "source": "https://github.com/sdv-dev/SDV",
+          "keywords": ["synthetic data", "generation", "realistic", "python"]
+        },
+        {
+          "name": "Mockaroo (version open source)",
+          "description": "Générateur de données fictives pour des tests (version communautaire limitée).",
+          "source": "https://github.com/mockaroo",
+          "keywords": ["mock data", "generation", "testing", "limited"]
+        },
+        {
+          "name": "Synth",
+          "description": "Outil pour générer des données synthétiques avec des modèles statistiques.",
+          "source": "https://github.com/shawnbanasick/synth",
+          "keywords": ["synthetic data", "statistics", "generation"]
+        },
+        {
+          "name": "DataSynthesizer",
+          "description": "Bibliothèque Python pour générer des données synthétiques préservant la vie privée.",
+          "source": "https://github.com/DataResponsibly/DataSynthesizer",
+          "keywords": ["python", "synthetic data", "privacy", "generation"]
+        },
+        {
+          "name": "TGAN",
+          "description": "Outil basé sur GAN pour générer des données tabulaires synthétiques.",
+          "source": "https://github.com/sdv-dev/TGAN",
+          "keywords": ["synthetic data", "gan", "tabular", "generation"]
+        },
+        {
+          "name": "CTGAN",
+          "description": "Variante de TGAN pour des données synthétiques conditionnelles.",
+          "source": "https://github.com/sdv-dev/CTGAN",
+          "keywords": ["synthetic data", "gan", "conditional", "generation"]
+        },
+        {
+          "name": "Mockito",
+          "description": "Bibliothèque pour générer des données fictives simples en Python.",
+          "source": "https://github.com/kissgyorgy/mockito",
+          "keywords": ["python", "mock data", "generation", "simple"]
+        },
+        {
+          "name": "Synthpop (R)",
+          "description": "Package R pour générer des données synthétiques démographiques.",
+          "source": "https://github.com/cran/synthpop",
+          "keywords": ["r", "synthetic data", "demographics", "generation"]
+        },
+        {
+          "name": "Fakeit",
+          "description": "Outil CLI pour générer des données synthétiques en masse.",
+          "source": "https://github.com/moosefs/fakeit",
+          "keywords": ["cli", "synthetic data", "generation", "mass"]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Outils d'Accessibilité des Données",
+      "description": "Solutions pour simplifier l'accès et l'utilisation des données par des non-experts (interfaces, guides).",
+      "keywords": ["accessibility", "data access", "no-code", "user-friendly"],
+      "tools": [
+        {
+          "name": "Apache Superset",
+          "description": "Interface simple pour explorer des données sans expertise technique.",
+          "source": "https://github.com/apache/superset",
+          "keywords": ["dashboards", "accessibility", "no-code", "apache"]
+        },
+        {
+          "name": "Metabase",
+          "description": "Outil convivial pour rendre les données accessibles à tous via des dashboards.",
+          "source": "https://github.com/metabase/metabase",
+          "keywords": ["dashboards", "accessibility", "no-code", "simple"]
+        },
+        {
+          "name": "CKAN",
+          "description": "Portail pour simplifier l'accès aux données publiques pour les non-experts.",
+          "source": "https://github.com/ckan/ckan",
+          "keywords": ["open data", "accessibility", "portal", "management"]
+        },
+        {
+          "name": "Redash",
+          "description": "Solution pour interroger et partager des données facilement.",
+          "source": "https://github.com/getredash/redash",
+          "keywords": ["query", "accessibility", "sharing", "simple"]
+        },
+        {
+          "name": "KNIME",
+          "description": "Plateforme no-code pour explorer et utiliser des données.",
+          "source": "https://github.com/knime/knime-core",
+          "keywords": ["no-code", "accessibility", "workflows", "data"]
+        },
+        {
+          "name": "Datawrapper",
+          "description": "Outil web pour visualiser et accéder aux données simplement (version limitée).",
+          "source": "https://www.datawrapper.de/",
+          "keywords": ["visualization", "accessibility", "simple", "limited"]
+        },
+        {
+          "name": "OpenRefine",
+          "description": "Outil graphique pour nettoyer et explorer des données facilement.",
+          "source": "https://github.com/OpenRefine/OpenRefine",
+          "keywords": ["gui", "accessibility", "cleaning", "exploration"]
+        },
+        {
+          "name": "Trino",
+          "description": "Moteur SQL pour accéder à diverses sources de données simplement.",
+          "source": "https://github.com/trinodb/trino",
+          "keywords": ["sql", "accessibility", "query", "multi-source"]
+        },
+        {
+          "name": "Datasette",
+          "description": "Outil pour rendre les bases SQLite accessibles via une interface web.",
+          "source": "https://github.com/simonw/datasette",
+          "keywords": ["sqlite", "accessibility", "web", "simple"]
+        },
+        {
+          "name": "Orange",
+          "description": "Logiciel avec interface graphique pour explorer des données sans coder.",
+          "source": "https://github.com/biolab/orange3",
+          "keywords": ["gui", "accessibility", "no-code", "exploration"]
         }
       ]
     }
